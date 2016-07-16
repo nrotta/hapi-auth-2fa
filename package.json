@@ -1,0 +1,42 @@
+{
+  "name": "hapi-auth-2fa",
+  "description": "2 factor authentication plugin for Hapi",
+  "version": "0.0.1",
+  "repository": "git://github.com/nrotta/hapi-auth-2fa",
+  "main": "lib/index.js",
+  "keywords": [
+    "hapi",
+    "plugin",
+    "auth",
+    "two factor auth",
+    "google authenticator"
+  ],
+  "engines": {
+    "node": ">=4.x.x"
+  },
+  "scripts": {
+    "test": "lab -a code -t 100 -L",
+    "test-cov-html": "lab -a code -r html -o coverage.html"
+  },
+  "author": "Nicolas Rotta",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "boom": "^3.2.2",
+    "hoek": "^4.0.1",
+    "joi": "^8.4.2",
+    "otplib": "^3.0.1"
+  },
+  "peerDependencies": {
+    "hapi": ">=11.x.x"
+  },
+  "devDependencies": {
+    "bcryptjs": "^2.3.0",
+    "code": "^3.0.1",
+    "handlebars": "^4.0.5",
+    "hapi": "^13.4.2",
+    "hapi-auth-cookie": "^6.1.1",
+    "iron": "^4.0.1",
+    "lab": "^10.8.2",
+    "vision": "^4.1.0"
+  }
+}
