@@ -1,7 +1,7 @@
 {
   "name": "hapi-auth-2fa",
   "description": "2 factor authentication plugin for Hapi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": "git://github.com/nrotta/hapi-auth-2fa",
   "main": "lib/index.js",
   "keywords": [
