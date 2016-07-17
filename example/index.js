@@ -76,7 +76,7 @@ server.register([require('vision'), require('hapi-auth-cookie'), require('../lib
                 }
             }
         },
-        handler: function (request, reply) {
+        handler: (request, reply) => {
 
             const email = request.payload.email;
             const user = users[email];
@@ -105,7 +105,7 @@ server.register([require('vision'), require('hapi-auth-cookie'), require('../lib
                 strategies: ['hapi-auth-2fa'],
                 payload: true
             },
-            handler: function (request, reply) {
+            handler: (request, reply) => {
 
                 const credentials = request.auth.credentials;
                 const user = users[credentials.email];
